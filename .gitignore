@@ -1,0 +1,10 @@
+env
+__pycache__/
+*.pyc
+.env
+chroma_db/
+vector_store/
+.DS_Store
+rag_output.txt
+
+venv/

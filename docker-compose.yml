@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  company-assistant:
+    build: .
+    container_name: company-assistant
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - ./company_db:/app/company_db   # Persist your ChromaDB data
