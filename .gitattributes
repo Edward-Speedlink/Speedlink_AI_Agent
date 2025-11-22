@@ -1,0 +1,6 @@
+# Force Unix line endings in repo, let OS handle checkout
+* text=auto eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
