@@ -1,5 +1,18 @@
 import os
 from dotenv import load_dotenv
+# apps/config.py
+from pydantic import BaseSettings
+
+class Settings(BaseSettings):
+    DATA_PATH: str = "data/"
+    MODEL_NAME: str = "small-crm-model"
+    CRM_MODEL: str = "crm-small-model"
+    LLM_MODEL: str = "llama-large"
+    USE_EMBEDDINGS: bool = True
+
+
+settings = Settings()
+
 
 load_dotenv()
 

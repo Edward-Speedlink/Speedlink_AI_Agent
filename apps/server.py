@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from apps import rag
+from .rag import rag
 
 app = FastAPI(title="Company AI Assistant")
 

@@ -48,11 +48,27 @@ def query_with_context(query: str, top_k: int = 3):
     return response["message"]["content"]
 
 # Example test queries
+# queries = [
+#     "Where is Speedsoft based?",
+#     "What does Speedsoft specialize in?",
+#     "who is the founder of speedlink? and how much is their staff paid on average?"
+# ]
+
 queries = [
-    "Where is Speedsoft based?",
-    "What does Speedsoft specialize in?",
-    "who is the founder of speedlink? and how much is their staff paid on average?"
+    "What is FTTH?",
+    "How much does FTTH cost?",
+    "Can I upgrade or downgrade my subscription package?",
+    "What amenities come with the Executive Office?",
+    "How do I register for the Pearson VUE exam?",
+    "Can I pay for the exam later?",
+    "What is the refund policy for exam cancellations?",
+    "How do I register for the training program?",
+    "How will I know if my payment is confirmed?",
+    "What is the duration of the training sessions?",
+    "When will I receive my renewal notification?"
+
 ]
+
 
 with open("rag_output.txt", "w") as f:
     for q in queries:
